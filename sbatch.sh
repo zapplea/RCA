@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --get-user-env
 #SBATCH --job-name="RCA"
-#SBATCH --time=12:00:00
+#SBATCH --time=10:00:00
 #SBATCH --nodes=1
 #SBATCH --mem=50GB
 #SBATCH --ntasks-per-node=1
