@@ -78,7 +78,7 @@ for iter=1:iteration,
         elapsed = etime(clock,timestarted);
         fprintf('Saving...');
         save(fname,'W','H','sW','iter1','objhistory','elapsed');
-        csvwrite('/home/yibing/Documents/data/bioinfo/RCAresult_Y.txt',W)
+        % csvwrite('/home/yibing/Documents/data3/bioinfo/RCAresult_Y.txt',W)
         fprintf('Done!\n');
     end
  
