@@ -11,9 +11,9 @@
 # my $dir= "C:\Documents and Settings\yanbi.NIH\Desktop\matlab\RCA";
 # chdir($dir);
 
-$array = "'13down.txt'";
-$array2 = "13down.txt";
-$tf_binding = "5mir_input_binding.txt";
+$array = "'12up.txt'";
+$array2 = "12up.txt";
+$tf_binding = "5TF_input_binding.txt";
 $a = "'median'";
 
 for ($i = 1; $i < 1001; $i++) {
