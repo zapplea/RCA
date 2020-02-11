@@ -78,7 +78,12 @@ for iter=1:iteration,
         elapsed = etime(clock,timestarted);
         fprintf('Saving...');
         save(fname,'W','H','sW','iter1','objhistory','elapsed');
-        % csvwrite('/home/yibing/Documents/data3/bioinfo/RCAresult_Y.txt',W)
+%        csvwrite('/home/yibing/Documents/code/bioinfo/RCA/RCAresult_Y.txt',W)
+%        csvwrite('/home/yibing/Documents/code/bioinfo/RCA/RCAresult_sW.txt',sW)
+%        csvwrite('/home/yibing/Documents/code/bioinfo/RCA/RCAresult_H.txt',H)
+%        csvwrite('/home/yibing/Documents/code/bioinfo/RCA/RCAresult_iter1.txt',iter1)
+%        csvwrite('/home/yibing/Documents/code/bioinfo/RCA/RCAresult_objhistory.txt',objhistory)
+%        csvwrite('/home/yibing/Documents/code/bioinfo/RCA/RCAresult_elapsed.txt',elapsed)
         fprintf('Done!\n');
     end
  

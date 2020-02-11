@@ -209,7 +209,9 @@ end
 fclose(fid1);
 
 % output Y file
+fprintf('=====================')
 str_file_name11 = [strtok(arraydataFileName,'\.') '_' strtok(TFbinddataFileName,'\.') '_' zMode '_' 'TFCluY_' num2str(L) '.dat'];
+fprintf(str_file_name11);
 
 fid11 = fopen(str_file_name11, 'wt');
 fprintf(fid11,'%s\t%s\t','UNIQID','NAME');

@@ -5,7 +5,7 @@
 #                 '/home/yibing/Documents/data/bioinfo/RCA_new/5mir_input_binding.txt',
 #                 '/home/yibing/Documents/data/bioinfo/RCA_new/5TF_lncR_input_binding.txt']
 
-in_fname_ls = ['/home/yibing/Documents/data/bioinfo/RCA_2020_2_10/lncR_Target_RCA_selected.txt']
+in_fname_ls = ['/home/yibing/Documents/data/bioinfo/RCA_2020_2_10/untitled']
 out_fname_ls = ['/home/yibing/Documents/data/bioinfo/RCA_2020_2_10/lncR_TF_input_binding.txt']
 
 for i in range(len(in_fname_ls)):
@@ -14,8 +14,8 @@ for i in range(len(in_fname_ls)):
     dic = {}
     with open(in_fname,'r') as f:
         for line in f:
-            gene,tf = line.split('\t')
-            tf = tf.replace('\n','')
+            gene = line.split('\t')[0]
+            tf = line.split('\t')[1]
             if gene in dic:
                 dic[gene].append(tf)
             else:

@@ -11,12 +11,12 @@
 # my $dir= "C:\Documents and Settings\yanbi.NIH\Desktop\matlab\RCA";
 # chdir($dir);
 
-$array = "'13down.txt'";
-$array2 = "13down.txt";
-$tf_binding = "5TF_input_binding.txt";
+$array = "'lncR_down.txt'";
+$array2 = "lncR_down.txt";
+$tf_binding = "lncR_TF_input_binding.txt";
 $a = "'median'";
 
-for ($i = 1; $i < 1001; $i++) {
+for ($i = 1; $i < 201; $i++) {
 	open(INPUT2, $tf_binding) || die("Could not open input2.txt\n$!");
 	open(OUTPUT,">output$i.txt") || die("Could not open output.txt\n$!");
 	$TF = "'output$i.txt'";
@@ -55,9 +55,6 @@ for ($i = 1; $i < 1001; $i++) {
 	} # run matlab
 	$cmd = 'matlab -wait -nosplash -nodesktop -r "RCA('.$array.', '.$TF.', '.$a.', 0, 1);quit;"';
 	system($cmd);
-
+    print "=======================";
 }close(OUTPUT);
 close(INPUT2);
-
-
-
